@@ -7,7 +7,7 @@
     border: none;
     color: black;
  }
-/* 公共样式 */
+ /* 公共样式 */
 .container {    
     width: 1300px;
     height:101px;
@@ -37,7 +37,7 @@
     line-height: 101px;
 }
 #menu li {
-    float: left;
+    
     flex:1;
 }
 
@@ -51,3 +51,76 @@
 }
 
 /* banner样式 */
+.banner {
+    width:1920px;
+    height: 513px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.list {
+    width: 5760px;
+    height: 513px;
+    position: absolute;
+}
+.list img {
+    width:1920px;
+    height: 513px;
+    float: left;。 /*此处浮动必须的，只有这样调节left值才能让第三张轮播图也能显示*/
+}
+.btn {
+    position: absolute;
+    top: 485px;
+    left: 868px;
+}
+.btn span {
+    /* display: block; */
+    float: left;
+    margin-right: 15px;
+    width: 50px;
+    height:5px;
+    cursor: pointer;
+    background-color: rgb(0,140,224);
+}
+.btn span:hover {
+    background-color: white;
+}
+.roll {
+    background-color: black;
+}
+/* feature部分样式 */
+.feature{
+    height: 408px;
+    
+    display: flex;
+}
+
+.feature div {
+    flex: 1;
+    text-align: center;
+    padding-top: 126px;
+}
+.feature div img {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+}
+.feature div h3 {
+    font-size: 16px;
+    color: #0f6fec;
+    text-align: center;
+    padding: 20px 0;
+}
+.feature div p {
+    font-size: 14px;
+    line-height: 26.6px;
+    color: #666;    
+}
+
+.service {
+    
+    height: 665px;
+    
+    background: url("../images/背景3.png") no-repeat;
+}
+
